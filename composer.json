@@ -1,0 +1,19 @@
+{
+    "description": "Add description here",
+    "type": "neos-package",
+    "require": {
+        "typo3/flow": "*",
+        "phlu/neos-models": "*"
+    },
+    "name": "phlu/interfaces",
+    "autoload": {
+        "psr-0": {
+            "PHLU\\Interfaces": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "PHLU.Interfaces"
+        }
+    }
+}
