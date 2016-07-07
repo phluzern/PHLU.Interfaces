@@ -14,14 +14,14 @@ namespace PHLU\Interfaces\Contact;
 use TYPO3\Flow\Annotations as Flow;
 use PHLU\Neos\Models\Domain\Model\Contact;
 use PHLU\Neos\Models\Service\Contact\ContactService;
-
+use TYPO3\Flow\Cli\CommandController;
 /**
  * A generic Contact Importing Service
  *
  * @api
  * @Flow\Scope("singleton")
  */
-class AbstractImportService {
+class AbstractImportService extends CommandController {
 
 
     /**
@@ -39,6 +39,7 @@ class AbstractImportService {
      */
     public function createOrUpdateContact($data) {
 
+       
         return $this->contactService->createOrUpdateContact($this->contactService->getModel($data));
 
     }
