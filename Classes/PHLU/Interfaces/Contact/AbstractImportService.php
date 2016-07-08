@@ -15,6 +15,8 @@ use TYPO3\Flow\Annotations as Flow;
 use PHLU\Neos\Models\Domain\Model\Contact;
 use PHLU\Neos\Models\Service\Contact\ContactService;
 use TYPO3\Flow\Cli\CommandController;
+
+
 /**
  * A generic Contact Importing Service
  *
@@ -31,6 +33,8 @@ class AbstractImportService extends CommandController {
     protected $contactService;
 
 
+    
+
     /**
      * Returns a contact model
      * @param array $data data with associated values
@@ -39,8 +43,7 @@ class AbstractImportService extends CommandController {
      */
     public function createOrUpdateContact($data) {
 
-       
-        return $this->contactService->createOrUpdateContact($this->contactService->getModel($data));
+       return $this->contactService->createOrUpdateContact($this->contactService->getModel($data));
 
     }
 
