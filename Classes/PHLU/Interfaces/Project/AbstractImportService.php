@@ -1,5 +1,5 @@
 <?php
-namespace PHLU\Interfaces\Contact;
+namespace PHLU\Interfaces\Project;
 
 /*
  * This file is part of the TYPO3.TYPO3CR package.
@@ -12,13 +12,13 @@ namespace PHLU\Interfaces\Contact;
  */
 
 use TYPO3\Flow\Annotations as Flow;
-use PHLU\Neos\Models\Domain\Model\Contact;
-use PHLU\Neos\Models\Service\Contact\ContactService;
+use PHLU\Neos\Models\Domain\Model\Project;
+use PHLU\Neos\Models\Service\Project\ProjectService;
 use TYPO3\Flow\Cli\CommandController;
 
 
 /**
- * A generic Contact Importing Service
+ * A generic Project Importing Service
  *
  * @api
  * @Flow\Scope("singleton")
@@ -28,22 +28,22 @@ class AbstractImportService extends CommandController {
 
     /**
      * @Flow\Inject
-     * @var ContactService
+     * @var ProjectService
      */
-    protected $contactService;
+    protected $projectService;
 
 
     
 
     /**
-     * Returns a contact model
+     * Returns a project model
      * @param array $data data with associated values
-     * @return Contact
+     * @return Project
      * @api
      */
-    public function createOrUpdateContact($data) {
+    public function createOrUpdateProject($data) {
 
-       return $this->contactService->createOrUpdateContact($this->contactService->getModel($data));
+       return $this->projectService->createOrUpdateProject($this->projectService->getModel($data));
 
     }
 
