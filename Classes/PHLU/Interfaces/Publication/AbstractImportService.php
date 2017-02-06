@@ -2,7 +2,7 @@
 namespace PHLU\Interfaces\Publication;
 
 /*
- * This file is part of the TYPO3.TYPO3CR package.
+ * This file is part of the Neos.ContentRepository package.
  *
  * (c) Contributors of the Neos Publication - www.neos.io
  *
