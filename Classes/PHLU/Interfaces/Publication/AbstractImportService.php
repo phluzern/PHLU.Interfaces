@@ -11,10 +11,10 @@ namespace PHLU\Interfaces\Publication;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 use PHLU\Neos\Models\Domain\Model\Publication;
 use PHLU\Neos\Models\Service\Publication\PublicationService;
-use TYPO3\Flow\Cli\CommandController;
+use Neos\Flow\Cli\CommandController;
 
 
 /**

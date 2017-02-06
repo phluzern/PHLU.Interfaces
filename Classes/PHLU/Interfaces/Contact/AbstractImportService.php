@@ -11,10 +11,10 @@ namespace PHLU\Interfaces\Contact;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 use PHLU\Neos\Models\Domain\Model\Contact;
 use PHLU\Neos\Models\Service\Contact\ContactService;
-use TYPO3\Flow\Cli\CommandController;
+use Neos\Flow\Cli\CommandController;
 
 
 /**

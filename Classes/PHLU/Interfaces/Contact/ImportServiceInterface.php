@@ -11,7 +11,7 @@ namespace PHLU\Interfaces\Contact;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 use PHLU\Neos\Models\Domain\Model\Contact;
 
 /**
