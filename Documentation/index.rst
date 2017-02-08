@@ -1,4 +1,4 @@
-PHLU.Interfaces |version| Documentation
+Phlu.Interfaces |version| Documentation
 ==================================================================================================
 
 This documentation covering version |release| has been rendered at: |today|

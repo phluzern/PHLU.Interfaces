@@ -1,5 +1,5 @@
 <?php
-namespace PHLU\Interfaces\Contact;
+namespace Phlu\Interfaces\Contact;
 
 /*
  * This file is part of the Neos.ContentRepository package.
@@ -12,7 +12,7 @@ namespace PHLU\Interfaces\Contact;
  */
 
 use Neos\Flow\Annotations as Flow;
-use PHLU\Neos\Models\Domain\Model\Contact;
+use Phlu\Neos\Models\Domain\Model\Contact;
 
 /**
  * An interface for contact import service

@@ -1,10 +1,10 @@
 <?php
-namespace PHLU\Interfaces\Project;
+namespace Phlu\Interfaces\Publication;
 
 /*
  * This file is part of the Neos.ContentRepository package.
  *
- * (c) Contributors of the Neos Project - www.neos.io
+ * (c) Contributors of the Neos Publication - www.neos.io
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -12,13 +12,13 @@ namespace PHLU\Interfaces\Project;
  */
 
 use Neos\Flow\Annotations as Flow;
-use PHLU\Neos\Models\Domain\Model\Project;
-use PHLU\Neos\Models\Service\Project\ProjectService;
+use Phlu\Neos\Models\Domain\Model\Publication;
+use Phlu\Neos\Models\Service\Publication\PublicationService;
 use Neos\Flow\Cli\CommandController;
 
 
 /**
- * A generic Project Importing Service
+ * A generic Publication Importing Service
  *
  * @api
  * @Flow\Scope("singleton")
@@ -28,22 +28,22 @@ class AbstractImportService extends CommandController {
 
     /**
      * @Flow\Inject
-     * @var ProjectService
+     * @var PublicationService
      */
-    protected $projectService;
+    protected $publicationService;
 
 
     
 
     /**
-     * Returns a project model
+     * Returns a publication model
      * @param array $data data with associated values
-     * @return Project
+     * @return Publication
      * @api
      */
-    public function createOrUpdateProject($data) {
+    public function createOrUpdatePublication($data) {
 
-       return $this->projectService->createOrUpdateProject($this->projectService->getModel($data));
+       return $this->publicationService->createOrUpdatePublication($this->publicationService->getModel($data));
 
     }
 

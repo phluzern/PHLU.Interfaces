@@ -1,5 +1,5 @@
 <?php
-namespace PHLU\Interfaces\Project;
+namespace Phlu\Interfaces\Project;
 
 /*
  * This file is part of the Neos.ContentRepository package.
@@ -12,7 +12,7 @@ namespace PHLU\Interfaces\Project;
  */
 
 use Neos\Flow\Annotations as Flow;
-use PHLU\Neos\Models\Domain\Model\Project;
+use Phlu\Neos\Models\Domain\Model\Project;
 
 /**
  * An interface for project import service

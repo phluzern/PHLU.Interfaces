@@ -8,12 +8,12 @@
     "name": "phlu/interfaces",
     "autoload": {
         "psr-0": {
-            "PHLU\\Interfaces": "Classes/"
+            "Phlu\\Interfaces": "Classes/"
         }
     },
     "extra": {
         "neos": {
-            "package-key": "PHLU.Interfaces"
+            "package-key": "Phlu.Interfaces"
         },
         "applied-flow-migrations": [
             "TYPO3.FLOW3-201201261636",
