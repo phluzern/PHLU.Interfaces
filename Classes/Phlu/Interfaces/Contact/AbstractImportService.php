@@ -38,12 +38,14 @@ class AbstractImportService extends CommandController {
     /**
      * Returns a contact model
      * @param array $data data with associated values
+     * @param boolean skippublications don't sync publications
+     * @param boolean skipprojects don't sync projects
      * @return Contact
      * @api
      */
-    public function createOrUpdateContact($data) {
+    public function createOrUpdateContact($data,$skippublications = null, $skipprojects = null) {
 
-       return $this->contactService->createOrUpdateContact($this->contactService->getModel($data));
+       return $this->contactService->createOrUpdateContact($this->contactService->getModel($data,$skippublications, $skipprojects));
 
     }
 
